@@ -75,6 +75,6 @@ CSS changes can be made in files in the /css/ folder. This is a placeholder file
 	margin: auto !important;
 	width: initial !important;
 }
-.gform_wrapper .datepicker {
+.gform_wrapper .datepicker.date_pick {
     width: 10.75em!important;
 }
