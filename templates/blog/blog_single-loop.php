@@ -320,27 +320,6 @@ $_post_format = get_post_format();
 				<div class="post_text">
 					<div class="post_text_inner">
 						<?php if(!$blog_single_hide_date || !$blog_single_hide_category || $blog_hide_author == "no"){ ?>
-						<div class="post_info">
-							<?php if(!$blog_single_hide_date){ ?>
-								<span class="time">
-									<span><?php the_time(get_option('date_format')); ?></span>
-								</span>
-							<?php } ?>
-							<?php if(!$blog_single_hide_category){ ?>
-								<span class="post_category">
-									<span><?php _e('In', 'qode'); ?></span>
-									<span><?php the_category(', '); ?></span>
-								</span>
-							<?php } ?>
-							<?php if($blog_hide_author == "no") { ?>
-                                <span class="post_author">
-									<span><?php _e('By', 'qode'); ?></span>
-									<a class="post_author_link" href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ) ); ?>">
-										<span><?php the_author_meta('display_name'); ?></span>
-									</a>
-								</span>
-                            <?php } ?>
-						</div>
 						<?php } ?>
 						<div class="post_content">
 							<h2><span><?php the_title(); ?></span></h2>

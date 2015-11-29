@@ -370,24 +370,6 @@ $_post_format = get_post_format();
 				<?php } ?>
 				<div class="post_text">
 					<div class="post_text_inner">
-						<div class="post_info">
-							<span class="time">
-								<span><?php the_time(get_option('date_format')); ?></span>
-							</span>
-							<span class="post_category">
-								<span><?php _e('In', 'qode'); ?></span>
-								<span><?php the_category(', '); ?></span>
-							</span>
-							<?php if($blog_hide_author == "no") { ?>
-                                <span class="post_author">
-									<span><?php _e('By', 'qode'); ?></span>
-									<a class="post_author_link" href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ) ); ?>">
-										<span><?php the_author_meta('display_name'); ?></span>
-									</a>
-								</span>
-                            <?php } ?>
-						</div>
-						
 						<h2><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
                         <?php
                         if($wp_read_more == "off"){
