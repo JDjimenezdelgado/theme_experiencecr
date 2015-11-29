@@ -20,6 +20,15 @@ $tabs = apply_filters( 'woocommerce_product_tabs', array() );
 if ( ! empty( $tabs ) ) : ?>
 
     <div class="q_tabs boxed woocommerce-tabs">
+        <ul class="tabs clearfix tabs-nav" style="display:none;">
+            <?php foreach ( $tabs as $key => $tab ) : ?>
+
+                <li class="<?php echo $key ?>_tab">
+                    <a href="#tab-<?php echo $key ?>"><?php echo apply_filters( 'woocommerce_product_' . $key . '_tab_title', $tab['title'], $key ) ?></a>
+                </li>
+
+            <?php endforeach; ?>
+        </ul>
         <?php foreach ( $tabs as $key => $tab ) : ?>
 
             <div class="panel entry-content tabs-container" id="tab-<?php echo $key ?>">
