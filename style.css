@@ -58,7 +58,7 @@ CSS changes can be made in files in the /css/ folder. This is a placeholder file
 	width: 100% !important;
 }
 .fix-email-form input.medium, .fix-email-form input.small{
-	width: 78% !important;	
+	width: 80% !important;	
 }
 .fix-email-form-es input.medium, .fix-email-form-es input.small{
 	width: 81% !important;	
@@ -74,4 +74,7 @@ CSS changes can be made in files in the /css/ folder. This is a placeholder file
 	padding: auto !important; 
 	margin: auto !important;
 	width: initial !important;
+}
+.gform_wrapper .datepicker {
+    width: 10.75em!important;
 }
