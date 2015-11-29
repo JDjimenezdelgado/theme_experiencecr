@@ -68,7 +68,7 @@ CSS changes can be made in files in the /css/ folder. This is a placeholder file
 	font-weight: 400;
 }
 .gform_wrapper .gform_footer{
-	text-align: center;
+	text-align: left;
 }
 #gform_2 .gform_footer{
 	padding: auto !important; 
