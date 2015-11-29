@@ -32,4 +32,10 @@ display: none !important;
 }
 .latest_post_holder .boxes_image a .latest_post_overlay{
     background-color: transparent !important;
+} 
+#qode-home-shop-slider-3{
+	padding-top: 90px;
+}
+.all_at_once{
+	margin-top: 50px;
 }
